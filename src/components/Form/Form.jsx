@@ -1,4 +1,3 @@
-import { Component } from "react";
 import img from "../../imgs/phone.png";
 import {
   Div,
@@ -13,8 +12,8 @@ import {
 } from "./FormStyled";
 import { useDispatch, useSelector } from "react-redux";
 import { nanoid } from "nanoid";
-import { addTask } from "../../redux/actions";
 import { getContacts } from "../../redux/selectors";
+import { addTask } from "../../redux/contactsSlice";
 
 export const Form = () => {
   const dispatch = useDispatch();
